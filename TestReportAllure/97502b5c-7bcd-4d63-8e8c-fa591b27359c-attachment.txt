@@ -1,0 +1,6 @@
+Starting Chromdriver
+Navigating to ToolsQA website
+Setup screensize
+Click on Selenium Training
+Click on Registration button
+Closing Chromdriver
