@@ -428,13 +428,13 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
     notFoundMessage.hidden = !allRowsHidden;
 }
 </script>
-    <h1>SeleniumReport.html</h1>
-    <p>Report generated on 18-Oct-2022 at 22:38:52 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <h1>SeleniumTest.html</h1>
+    <p>Report generated on 18-Oct-2022 at 23:25:02 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>JAVA_HOME</td>
-        <td>C:\Program Files\Java\jdk-11.0.9</td></tr>
+        <td>C:\Program Files\Java\jdk-11.0.16</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "0.13.1", "py": "1.10.0", "pytest": "7.1.3"}</td></tr>
@@ -448,7 +448,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.9.5</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 12.36 seconds. </p>
+    <p>1 tests ran in 10.04 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -464,8 +464,14 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">PyTest_RegistrationNavigation.py::TestRegistrationNavigation::test_registrationNavigation</td>
-          <td class="col-duration">12.11</td>
+          <td class="col-duration">9.89</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Starting Chromdriver
+<br/> ------------------------------Captured stdout call------------------------------ <br/>Navigating to ToolsQA website
+Setup screensize
+Click on Selenium Training
+Click on Registration button
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Closing Chromdriver
+<br/></div></td></tr></tbody></table></body></html>

@@ -14,12 +14,18 @@ class TestRegistrationNavigation():
   def setup_method(self, method):
     self.driver = webdriver.Chrome()
     self.vars = {}
+    print("Starting Chromdriver")
   
   def teardown_method(self, method):
     self.driver.quit()
+    print("Closing Chromdriver")
   
   def test_registrationNavigation(self):
     self.driver.get("https://www.toolsqa.com/")
+    print("Navigating to ToolsQA website")
     self.driver.set_window_size(1552, 832)
+    print("Setup screensize")
     self.driver.find_element(By.XPATH, "//a[contains(text(),\'Selenium Training\')]").click()
+    print("Click on Selenium Training")
     self.driver.find_element(By.XPATH, "//a[contains(text(),\'Go To Registration\')]").click()
+    print("Click on Registration button")
