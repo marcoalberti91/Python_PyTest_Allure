@@ -3,11 +3,19 @@
 ## Execute a test with Pytest
 Install packages:
 - pytest
-Use the following command to execute the test:
+
+Use the following command to execute a specific test:
 ```python
 pytest <Test_Script.py>
 ```
-
+Use the following command to execute all the tests at once:
+```python
+python -m pytest
+```
+Use the following command to execute all the tests with a specific marker (e.g. @pytest.mark.nrt):
+```python
+python -m pytest -v -m nrt
+```
 ## Generate an HTML Report
 Install packages:
 - pytest-html
@@ -29,8 +37,9 @@ npm install -g allure-commandline --save-dev
 ```
 Execute the test generating an allure report in JSON format:
 ```python
-pytest --alluredir=.\TestReportAllure <Test_Script.py> 
+python -m pytest <Test_Script.py> --alluredir=.\TestReportAllure
 ```
+
 Convert JSON into HTML, to see this on the browser:
 ```python
 allure serve .\TestReportAllure
